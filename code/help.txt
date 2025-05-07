@@ -1,0 +1,10 @@
+Intstruction to run the code:
+
+1. Add the path of images to be stitched in the "image_list[]" in application.py (Line 169). 
+    Some sample images that can be stitched are given in "test_images" directory.
+2. You can adjust the threshold for Lowe's Ratio (Line 188) and number of RANSAC iterations (Line 189) in application.py.
+3. Currently the code blends images using "Max Pixel Intensity" method. This might take some time to run.
+4. To use "Weighted Distance Maps" to blend images comment lines 78-95 and uncomment lines 98-145.
+5. Run application.py
+6. You can observe detected keypoints in "image1_keypoints.jpg" and "image2_keypoints.jpg", and the matched keypoints in "matched_keypoints.jpg".
+7. Final stitched panorama is stored in "stitched_panorama.png"
